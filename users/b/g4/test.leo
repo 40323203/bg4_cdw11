@@ -10,19 +10,17 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160501215436.2"><vh>pelican 部份</vh>
-<v t="amd.20160501215558.1"><vh>@path ./../../../</vh>
+<v t="amd.20160501215436.2" a="E"><vh>pelican 部份</vh>
+<v t="amd.20160501215558.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501223113.1"><vh>@edit README.md</vh></v>
-<v t="amd.20160501215634.1"><vh>@path static</vh>
+<v t="amd.20160501215634.1" a="E"><vh>@path static</vh>
 <v t="amd.20160501220009.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160501220009.2"><vh>@button gh-pages pelican</vh></v>
 </v>
 <v t="amd.20160501220029.1"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
-<v t="amd.20160501215942.1"><vh>@path content/b/g4</vh>
-<v t="amd.20160501215720.1"><vh>@edit 40323203-cdw11.md</vh></v>
-</v>
+<v t="amd.20160501215942.1"><vh>@path content/b/g4</vh></v>
 </v>
 </v>
 </v>
@@ -87,37 +85,12 @@ g.es("admin pelican 近端執行完畢")
 @others
 if __name__ == "__main__":
     app.run()
-app.register_blueprint(users.a.g4.ag4_40323138.ag4_40323138)
-app.register_blueprint(users.a.g10.ag10_40323141_task1.ag10_40323141)    
-app.register_blueprint(users.a.g9.ag9_40323132task.ag9_40323132)
-app.register_blueprint(users.a.g10.ag10_40323139.ag10_40323139)
-app.register_blueprint(users.a.g5.ag5_40323113task1.ag5_40323113)
-app.register_blueprint(users.a.g8.ag8_40323131_task1.ag8_40323131)
-app.register_blueprint(users.a.g4.ag4_40323138_task2bacd.ag4_40323138bacd)
-app.register_blueprint(users.a.g4.ag4_40323138_task3abcd.ag4_40323138task3)
-app.register_blueprint(users.a.g8.ag8_40323123.ag8_40323123)
-app.register_blueprint(users.a.g10.ag10_40323129_task1.ag10_40323129)
-app.register_blueprint(users.a.g2.ag2_40323120.ag2_40323120)
-app.register_blueprint(users.a.g1.ag1_40323105.ag1_40323105)
 
-
-
-app.register_blueprint(users.b.g9.bg9_40323250.bg9_40323250)
-app.register_blueprint(users.b.g1.bg1_40123156.bg1_40123156)
-#bg2
-app.register_blueprint(users.b.g2.bg2_40123235.bg2_40123235)
-app.register_blueprint(users.b.g2.bg2_40123202.bg2_40123202)
 #bg4
-
 app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
+app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
-#bg5
-app.register_blueprint(users.b.g5.b40323204_cdw11_1.bg5_40323204_1)
-app.register_blueprint(users.b.g5.b40323206_cdw11_1.bg5_40323206_1)
 
-#bg11
-app.register_blueprint(users.b.g11.bg11_40323245.bg11_40323245)
-app.register_blueprint(users.b.g11.bg11_40323252.bg11_40323252)
 
 
 </t>
@@ -253,34 +226,12 @@ import math
 import os
 # init.py 為自行建立的起始物件
 import init
-import users.a.g1.ag1_40323105
-import users.a.g2.ag2_40323120
-import users.a.g10.ag10_40323129_task1
-import users.a.g10.ag10_40323141_task1
-import users.a.g10.ag10_40323139
-import users.a.g9.ag9_40323132task
-import users.a.g5.ag5_40323113task1
-import users.a.g4.ag4_40323138
-import users.a.g4.ag4_40323138_task2bacd
-import users.a.g4.ag4_40323138_task3abcd
-import users.a.g8.ag8_40323131_task1
-import users.b.g9.bg9_40323250
-import users.b.g1.bg1_40123156
-import users.a.g8.ag8_40323123
-#bg2
-import users.b.g2.bg2_40123235
-import users.b.g2.bg2_40123202
+
 #bg4
-
 import users.b.g4.b40323201_cdw11
+import users.b.g4.bg4_40323203
 import users.b.g4.bg4_test
-#bg5
-import users.b.g5.b40323206_cdw11_1
-import users.b.g5.b40323204_cdw11_1
 
-#bg11
-import users.b.g11.bg11_40323245
-import users.b.g11.bg11_40323252
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
