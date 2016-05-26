@@ -7,10 +7,10 @@ import os
 import init
 
 #bg4
-import users.b.g4.b40323201_cdw11
-import users.b.g4.bg4_40323203
+import users.b.g4.bg4_40323202
+
 import users.b.g4.bg4_40323208
-import users.b.g4.bg4_test
+
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
@@ -37,8 +37,6 @@ app = Flask(__name__)
 # In order to use sessions you have to set a secret key
 # set the secret key.  keep this really secret:
 app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
 
 
 
@@ -384,10 +382,8 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
-app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
-app.register_blueprint(users.b.g4.bg4_test.bg4_test)
+app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 
 
