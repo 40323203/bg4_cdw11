@@ -90,7 +90,14 @@ if __name__ == "__main__":
 #bg4
 
 app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
+<<<<<<< HEAD
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
+=======
+
+
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
+
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 
@@ -233,7 +240,14 @@ import init
 #bg4
 
 import users.b.g4.b40323201_cdw11
+<<<<<<< HEAD
 import users.b.g4.bg4_40323208
+=======
+
+
+import users.b.g4.bg4_40323208
+
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
 import users.b.g4.bg4_test
 import users.b.g4.bg4_40323202
 
@@ -1119,11 +1133,18 @@ r1, s1 = mychain.basic_rot(p13, k13, '''+str(first_degree)+''')
     # 下段右方接點為 x22, y22, 左側則為 r11, s11
     outstring += "mychain.basic(x22, y22, r11, s11)\n"
  
+<<<<<<< HEAD
     return outstring
 </t>
 <t tx="leo.20160526093727.1">@bg4_test.route('/threegear', defaults={'n1':15,'n2':20,'n3':18})
 @bg4_test.route('/threegear/&lt;n1&gt;/&lt;n2&gt;/&lt;n3&gt;')
 def threegear(n1, n2, n3):
+=======
+    return outstring</t>
+<t tx="leo.20160526093727.1">@bg4_test.route('/threegear', defaults={'n1':17,'n2':29,'n3':15,'n4':30})
+@bg4_test.route('/threegear/&lt;n1&gt;/&lt;n2&gt;/&lt;n3&gt;/&lt;n4&gt;')
+def threegear(n1, n2, n3, n4):
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
     # 真正最後的架構應該要在函式中準備繪圖所需的資料, 然後用 template 呈現內容
     title = "網際 2D 繪圖"
     head = '''
@@ -1152,7 +1173,11 @@ brython(1);
     # 模數計算 m = canvas.width*0.8/(n1+n2+n3)
     # max([int(n1), int(n2), int(n3)])
     # 所以 height = 1.2*800*0.8/(int(n1)+int(n2)+int(n3))*max([int(n1), int(n2), int(n3)])
+<<<<<<< HEAD
     height = 1.2*800*0.8/(int(n1)+int(n2)+int(n3))*max([int(n1), int(n2), int(n3)])
+=======
+    height = 1.2*800*0.8/(int(n1)+int(n2)+int(n3)+int(n3))*max([int(n1), int(n2), int(n3), int(n4)])
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
     body = '''
     
 延伸應用:&lt;br /&gt;
@@ -1247,17 +1272,30 @@ def spur(cx, cy, m, n, pa, theta):
 n1 = '''+str(n1)+'''
 n2 = '''+str(n2)+'''
 n3 = '''+str(n3)+'''
+<<<<<<< HEAD
+=======
+n4 = '''+str(n4)+'''
+
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
  
 # m 為模數, 根據畫布的寬度, 計算適合的模數大小
 # Module = mm of pitch diameter per tooth
 # 利用 80% 的畫布寬度進行繪圖
 # 計算模數的對應尺寸
+<<<<<<< HEAD
 m = canvas.width*0.8/(n1+n2+n3)
+=======
+m = canvas.width*0.8/(n1+n2+n3+n4)
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
  
 # 根據齒數與模組計算各齒輪的節圓半徑
 pr1 = n1*m/2
 pr2 = n2*m/2
 pr3 = n3*m/2
+<<<<<<< HEAD
+=======
+pr4 = n4*m/2
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
  
 # 畫布左右兩側都保留畫布寬度的 10%
 # 依此計算對應的最左邊齒輪的軸心座標
@@ -1278,6 +1316,10 @@ spur(cx+pr1+pr2, cy, m, n2, pa, 180-180/n2)
 # 但是第2齒為了與第一齒囓合時, 已經從原始定位線轉了 180-180/n2 度
 # 而當第2齒從與第3齒囓合的定位線, 逆時鐘旋轉 180-180/n2 角度後, 原先囓合的第3齒必須要再配合旋轉 (180-180/n2 )*n2/n3
 spur(cx+pr1+pr2+pr2+pr3, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+<<<<<<< HEAD
+=======
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4+(180-180/n2)*n2/n4)
+>>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
 &lt;/script&gt;
 '''
     bodystring = "&lt;body&gt;" + body+"&lt;/body&gt;"
