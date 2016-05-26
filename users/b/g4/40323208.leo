@@ -21,11 +21,7 @@
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g4</vh>
-<<<<<<< HEAD
-<v t="amd.20160501215720.1"><vh>@edit 40323208-cdw11.md</vh></v>
-=======
 <v t="leo.20160526111548.1"><vh>@edit 40323208-cdw11.md</vh></v>
->>>>>>> e62700d185fe23bd185873012266d54832c4a81f
 </v>
 </v>
 </v>
@@ -92,23 +88,9 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
->>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
-
-=======
-app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
->>>>>>> e62700d185fe23bd185873012266d54832c4a81f
-app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 
 
 </t>
@@ -246,26 +228,11 @@ import os
 import init
 
 #bg4
-
-import users.b.g4.b40323201_cdw11
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-import users.b.g4.bg4_40323203
-import users.b.g4.bg4_40323208
-
-import users.b.g4.bg4_test
-
-=======
-import users.b.g4.bg4_40323203
->>>>>>> f9a961fbf606a8c4e2360b689b8686377a644254
-import users.b.g4.bg4_40323208
-import users.b.g4.bg4_test
 import users.b.g4.bg4_40323202
 
+import users.b.g4.bg4_40323208
 
->>>>>>> e62700d185fe23bd185873012266d54832c4a81f
+
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
@@ -1174,10 +1141,6 @@ x7, y7 = mychain.basic_rot(x6, y6, -0, color="brown")
 
 
 </t>
-<<<<<<< HEAD
-<t tx="leo.20160519101258.1"></t>
-<t tx="leo.20160519114225.1"></t>
-=======
 <t tx="leo.20160519101258.1">@bg4_40323208.route('/twocircle/&lt;x&gt;/&lt;y&gt;')
 @bg4_40323208.route('/twocircle', defaults={'x':0, 'y':0})
 def twocircle(x,y):
@@ -1484,6 +1447,5 @@ r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
         outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
  
     return outstring</t>
->>>>>>> e62700d185fe23bd185873012266d54832c4a81f
 </tnodes>
 </leo_file>
