@@ -382,6 +382,10 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
+<<<<<<< HEAD
+=======
+app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
+>>>>>>> 827a8598a8e3149cf2560bedb2074c18bf6667a6
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)

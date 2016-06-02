@@ -743,8 +743,15 @@ def spur(cx, cy, m, n, pa, theta):
 n1 = '''+str(n1)+'''
 n2 = '''+str(n2)+'''
 n3 = '''+str(n3)+'''
+<<<<<<< HEAD
 n4 = '''+str(n4)+'''
 
+=======
+
+n4 = '''+str(n4)+'''
+
+
+>>>>>>> 827a8598a8e3149cf2560bedb2074c18bf6667a6
  
 # m 為模數, 根據畫布的寬度, 計算適合的模數大小
 # Module = mm of pitch diameter per tooth
@@ -754,6 +761,10 @@ n4 = '''+str(n4)+'''
 m = canvas.width*0.8/(n1+n2+n3)
 
 m = canvas.width*0.8/(n1+n2+n3+n4)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 827a8598a8e3149cf2560bedb2074c18bf6667a6
  
 # 根據齒數與模組計算各齒輪的節圓半徑
 pr1 = n1*m/2
@@ -782,8 +793,14 @@ spur(cx+pr1+pr2, cy, m, n2, pa, 180-180/n2)
 # 但是第2齒為了與第一齒囓合時, 已經從原始定位線轉了 180-180/n2 度
 # 而當第2齒從與第3齒囓合的定位線, 逆時鐘旋轉 180-180/n2 角度後, 原先囓合的第3齒必須要再配合旋轉 (180-180/n2 )*n2/n3
 spur(cx+pr1+pr2+pr2+pr3, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+<<<<<<< HEAD
 =======
 spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4+(180-180/n2)*n2/n4)
+=======
+
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4+(180-180/n2)*n2/n4)
+
+>>>>>>> 827a8598a8e3149cf2560bedb2074c18bf6667a6
 </script>
 '''
     bodystring = "<body>" + body+"</body>"
