@@ -639,3 +639,170 @@ x7, y7 = mychain.basic_rot(x6, y6, -0, color="yellow")
 
 
 
+@bg4_40323202.route('/circle2/<x>/<y>')
+@bg4_40323202.route('/circle2', defaults={'x':0, 'y':0})
+def drawcircle2(x,y):
+    return head_str + chain_str + circle2(int(x), int(y)) + tail_str
+
+
+
+
+def circle2(x, y):
+    # 20 為鏈條兩圓距
+    # chain 所圍之圓圈半徑為 20/2/math.asin(degree*math.pi/180/2)
+    # degree = math.asin(20/2/radius)*180/math.pi
+    x = 50
+    y = 0
+    degree = 12
+    # 78, 66, 54, 42, 30, 18, 6度
+    #必須有某些 chain 算座標但是不 render
+    first_degree = 90 - degree
+    repeat = 360 / degree
+    # 第1節也是 virtual chain
+    outstring = '''
+mychain = chain()
+ 
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''', True)
+#x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''')
+'''
+    # 這裡要上下各多留一節虛擬 chain, 以便最後進行連接 (x7, y7) 與 (x22, y22)
+    for i in range(2, int(repeat)+1):
+        #if i < 7 or i > 23:        
+        if i <= 7 or i >= 23:
+            # virautl chain
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+", True) \n"
+            #outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
+        else:
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
+ 
+    p = -150
+    k = 0
+    degree = 20
+    # 70, 50, 30, 10
+    # 從 i=5 開始, 就是 virautl chain
+    first_degree = 90 - degree
+    repeat = 360 / degree
+    # 第1節不是 virtual chain
+    outstring += '''
+#mychain = chain()
+ 
+p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        if i >= 5 and i <= 13:
+            # virautl chain
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+", True) \n"
+            #outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+") \n"
+        else:
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+") \n"
+ 
+    # 上段連接直線
+    # 從 p5, k5 作為起點
+    first_degree = 10
+    repeat = 11
+    outstring += '''
+m1, n1 = mychain.basic_rot(p4, k4, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "m"+str(i)+", n"+str(i)+"=mychain.basic_rot(m"+str(i-1)+", n"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 下段連接直線
+    # 從 p12, k12 作為起點
+    first_degree = -10
+    repeat = 11
+    outstring += '''
+r1, s1 = mychain.basic_rot(p13, k13, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 上段右方接點為 x7, y7, 左側則為 m11, n11
+    outstring += "mychain.basic(x7, y7, m11, n11)\n"
+    # 下段右方接點為 x22, y22, 左側則為 r11, s11
+    outstring += "mychain.basic(x22, y22, r11, s11)\n"
+ 
+    return outstring
+@bg4_40323202.route('/chain/<x>/<y>')
+@bg4_40323202.route('/chain', defaults={'x':0, 'y':0})
+def chain(x,y):
+    return head_str + chain_str + chain(int(x), int(y)) + tail_str
+    
+    
+def chain(x, y, scale=1, color="yellow"):
+    '''
+從圖解法與符號式解法得到的兩條外切線座標點
+(-203.592946177111, 0.0), (0.0, 0.0), (-214.364148466539, 56.5714145924675), (-17.8936874260919, 93.9794075692901)
+(-203.592946177111, 0.0), (0.0, 0.0), (-214.364148466539, -56.5714145924675), (-17.8936874260919, -93.9794075692901)
+左邊關鍵鍊條起點 (-233.06, 49.48), 角度 20.78, 圓心 (-203.593, 0.0)
+右邊關鍵鍊條起點 (-17.89, 93.9), 角度 4.78, 圓心 (0, 0)
+    '''
+    # 20 為鏈條兩圓距
+    # chain 所圍之圓圈半徑為 20/2/math.asin(degree*math.pi/180/2)
+    # degree = math.asin(20/2/radius)*180/math.pi
+    x = 50
+    y = 0
+    degree = 20
+    first_degree = 60
+    startx = -233.06+150
+    starty = -40
+    repeat = 360 / degree
+    # 先畫出左邊第一關鍵節
+    outstring = '''
+mychain = chain()
+mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
+ 
+x1, y1 = mychain.basic_rot('''+str(startx)+","+str(starty)+", "+str(first_degree)+''')
+ 
+'''
+    # 接著繪製左邊的非虛擬鍊條
+    for i in range(2, int(repeat)+1):
+        if i >=2 and i <=11:
+            # virautl chain
+            #outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+", True) \n"
+        else:
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+ 
+    # 接著處理右邊的非虛擬鍊條
+    # 先畫出右邊第一關鍵節
+ 
+    p = -17.89+45
+    k = 152
+    degree = 12
+    first_degree = 50
+    repeat = 360 / degree
+    # 第1節不是 virtual chain
+    outstring += '''
+#mychain = chain()
+ 
+p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        if i >=18:
+            # virautl chain
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+", True) \n"
+            #outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+        else:
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+ 
+    # 上段連接直線
+    # 從 x1, y1 作為起點
+    first_degree =  60.2
+    repeat = 10
+    outstring += '''
+m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "m"+str(i)+", n"+str(i)+"=mychain.basic_rot(m"+str(i-1)+", n"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 下段連接直線
+    # 從 x11, y11 作為起點
+    first_degree = 39
+    repeat = 10
+    outstring += '''
+r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    return outstring

@@ -383,7 +383,7 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201_cdw11)
+app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
