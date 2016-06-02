@@ -7,10 +7,9 @@ import os
 import init
 
 #bg4
-import users.b.g4.b40323201_cdw11
 import users.b.g4.bg4_40323202
 import users.b.g4.bg4_40323208
-import users.b.g4.bg4_test
+import users.b.g4.bg4_40323205
 
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
@@ -383,8 +382,10 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
+<<<<<<< HEAD
+=======
 app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
+>>>>>>> 827a8598a8e3149cf2560bedb2074c18bf6667a6
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
-app.register_blueprint(users.b.g4.bg4_test.bg4_test)
-
+app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
