@@ -506,9 +506,9 @@ def chain(x, y, scale=1, color="yellow"):
     x = 50
     y = 0
     degree = 20
-    first_degree = 60
-    startx = -233.06+150
-    starty = -40
+    first_degree = 110
+    startx = -233.06+300
+    starty = -88
     repeat = 360 / degree
     # 先畫出左邊第一關鍵節
     outstring = '''
@@ -531,9 +531,9 @@ x1, y1 = mychain.basic_rot('''+str(startx)+","+str(starty)+", "+str(first_degree
     # 先畫出右邊第一關鍵節
  
     p = -17.89+45
-    k = 152
+    k = 130
     degree = 12
-    first_degree = 50
+    first_degree = 90
     repeat = 360 / degree
     # 第1節不是 virtual chain
     outstring += '''
@@ -551,7 +551,7 @@ p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
  
     # 上段連接直線
     # 從 x1, y1 作為起點
-    first_degree =  60.2
+    first_degree =  99.6
     repeat = 10
     outstring += '''
 m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
@@ -561,8 +561,8 @@ m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
  
     # 下段連接直線
     # 從 x11, y11 作為起點
-    first_degree = 39
-    repeat = 10
+    first_degree = 77.5
+    repeat = 9
     outstring += '''
 r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
 '''
