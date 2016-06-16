@@ -14,7 +14,7 @@
 <v t="amd.20160501215558.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501223113.1"><vh>@edit README.md</vh></v>
 <v t="amd.20160501215634.1" a="E"><vh>@path static</vh>
-<v t="amd.20160501220009.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="amd.20160501220009.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160501220009.2"><vh>@button gh-pages pelican</vh></v>
 </v>
 <v t="amd.20160501220029.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
@@ -23,6 +23,7 @@
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g4</vh>
 <v t="leo.20160526111548.1"><vh>@edit 40323208-cdw11.md</vh></v>
 <v t="leo.20160602112326.1"><vh>@edit 40323208-cdw13.md</vh></v>
+<v t="leo.20160616111005.1"><vh>@edit 40323208-cdw15.md</vh></v>
 </v>
 </v>
 </v>
@@ -89,10 +90,9 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 
 </t>
@@ -230,10 +230,10 @@ import os
 import init
 
 #bg4
-import users.b.g4.bg4_b40323201_cdw11
+
 import users.b.g4.bg4_40323202
-import users.b.g4.bg4_40323208
 import users.b.g4.bg4_40323205
+import users.b.g4.bg4_40323208
 import users.b.g4.bg4_test
 
 
@@ -1389,9 +1389,9 @@ def eighteenthirty(x,y):
     x = 50
     y = 0
     degree = 20
-    first_degree = 20.78
-    startx = -233.06+100
-    starty = 49.48
+    first_degree =112
+    startx = -233.06+210
+    starty = -100
     repeat = 360 / degree
     # 先畫出左邊第一關鍵節
     outstring = '''
@@ -1412,10 +1412,10 @@ x1, y1 = mychain.basic_rot('''+str(startx)+","+str(starty)+", "+str(first_degree
     # 接著處理右邊的非虛擬鍊條
     # 先畫出右邊第一關鍵節
  
-    p = -17.89+100
-    k = 93.98
+    p =  -233.06+165
+    k = 120
     degree = 12
-    first_degree = 4.78
+    first_degree = 95
     repeat = 360 / degree
     # 第1節不是 virtual chain
     outstring += '''
@@ -1433,7 +1433,7 @@ p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
  
     # 上段連接直線
     # 從 x1, y1 作為起點
-    first_degree = 10.78
+    first_degree = 100.5
     repeat = 10
     outstring += '''
 m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
@@ -1443,7 +1443,7 @@ m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
  
     # 下段連接直線
     # 從 x11, y11 作為起點
-    first_degree = -10.78
+    first_degree = 79.4
     repeat = 10
     outstring += '''
 r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
