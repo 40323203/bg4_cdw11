@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/</loc>
-<lastmod>2016-06-16T10:53:23-00:00</lastmod>
+<lastmod>2016-06-16T10:56:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/archives.html</loc>
-<lastmod>2016-06-16T10:53:23-00:00</lastmod>
+<lastmod>2016-06-16T10:56:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/tags.html</loc>
-<lastmod>2016-06-16T10:53:23-00:00</lastmod>
+<lastmod>2016-06-16T10:56:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/categories.html</loc>
-<lastmod>2016-06-16T10:53:23-00:00</lastmod>
+<lastmod>2016-06-16T10:56:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -88,13 +88,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/cdw13.html</loc>
-<lastmod>2016-06-16T10:43:32+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/40323202.html</loc>
 <lastmod>2016-06-16T09:25:34+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -104,6 +97,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/40323208.html</loc>
 <lastmod>2016-06-16T09:25:34+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/40323205.html</loc>
+<lastmod>2016-06-16T10:43:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -123,7 +123,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/40323205.html</loc>
+<loc>http://cdw11-ag100.rhcloud.com/static/blog/tag/cdw13.html</loc>
 <lastmod>2016-06-16T10:43:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

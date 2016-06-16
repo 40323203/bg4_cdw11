@@ -7,6 +7,10 @@ import os
 import init
 
 #bg4
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0bca26eddb9fb00bcd9ff7e076ad4c57c395eab1
 import users.b.g4.bg4_40323202
 import users.b.g4.bg4_40323208
 import users.b.g4.bg4_40323205
@@ -384,6 +388,10 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0bca26eddb9fb00bcd9ff7e076ad4c57c395eab1
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
