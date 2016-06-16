@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-06-16T12:03:55-00:00</lastmod>
+<lastmod>2016-06-16T12:09:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-06-16T12:03:55-00:00</lastmod>
+<lastmod>2016-06-16T12:09:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-06-16T12:03:55-00:00</lastmod>
+<lastmod>2016-06-16T12:09:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-06-16T12:03:55-00:00</lastmod>
+<lastmod>2016-06-16T12:09:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -95,8 +95,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/40323203.html</loc>
-<lastmod>2016-06-16T09:09:27+08:06</lastmod>
+<loc>./tag/40323205.html</loc>
+<lastmod>2016-06-16T11:56:08+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -109,21 +109,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/40323205.html</loc>
-<lastmod>2016-06-16T11:56:08+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/cdw13.html</loc>
-<lastmod>2016-06-16T11:56:08+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/40323208.html</loc>
+<loc>./tag/cdw11.html</loc>
 <lastmod>2016-06-16T09:09:27+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -137,8 +123,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/cdw11.html</loc>
+<loc>./tag/40323203.html</loc>
 <lastmod>2016-06-16T09:09:27+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/40323208.html</loc>
+<lastmod>2016-06-16T09:09:27+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/cdw13.html</loc>
+<lastmod>2016-06-16T11:56:08+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
