@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-06-16T10:43:01+08:00</updated><entry><title>40323202 cdw13 報告</title><link href="./40323202-cdw13-bao-gao.html" rel="alternate"></link><updated>2016-06-16T10:43:01+08:00</updated><author><name>40323202</name></author><id>tag:,2016-06-16:./40323202-cdw13-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw13 協同專案&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-06-16T11:56:08+08:00</updated><entry><title>40323205 cdw13 報告</title><link href="./40323205-cdw13-bao-gao.html" rel="alternate"></link><updated>2016-06-16T11:56:08+08:00</updated><author><name>40323205</name></author><id>tag:,2016-06-16:./40323205-cdw13-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;&lt;img src="http://imgur.com/NX1VUgR.png" width="60%" /&gt;&lt;/p&gt;
+&lt;p&gt;Openshift：&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/eighteenthirty"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/eighteenthirty &lt;/font&gt;&lt;/a&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;font size="3"&gt;&lt;b&gt;心得：&lt;/b&gt;&lt;/br&gt;
+本次作業是將鍊條翻轉成90度。&lt;/br&gt;
+試驗了好幾次，只能將一開始的鏈條翻轉成60度後，就無法作業了，&lt;/br&gt;
+後來詢問了同學，同學也很好心的告訴了我他的方法後，&lt;/br&gt;
+照著同學做的方式，自己也更改了一些程式後，就完成了此次作業。&lt;/br&gt;但鍊條是用微調的方法，不是使用算式，所以看起來有些許不同、奇怪。
+&lt;/font&gt;&lt;/p&gt;</summary><category term="40323205"></category><category term="cdw13"></category></entry><entry><title>40323202 cdw13 報告</title><link href="./40323202-cdw13-bao-gao.html" rel="alternate"></link><updated>2016-06-16T10:43:01+08:00</updated><author><name>40323202</name></author><id>tag:,2016-06-16:./40323202-cdw13-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw13 協同專案&lt;/p&gt;
 
 
 &lt;p&gt;pelican 網誌位置: &lt;a href="http://cdw11-ag100.rhcloud.com/static/"&gt;http://cdw11-ag100.rhcloud.com/static/&lt;/a&gt;&lt;/p&gt;
@@ -58,17 +71,24 @@ openshift網站:http://cdw11-40323202.rhcloud.com/bg4_40323202/taskabcd&lt;/li&g
 
 &lt;p&gt;&lt;b&gt;1.AAAA&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/S8SqIu4.png" width="60%" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/AAAAAAAA"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/AAAAAAAA &lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Openshift：&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/AAAAAAAA"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/AAAAAAAA &lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;2.BADC&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/wirZ12c.png" width="60%" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/BADCBADC"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/BADCBADC &lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Openshift：&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/BADCBADC"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/BADCBADC &lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;3.ABCD&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/U71YEry.png" width="60%" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/ABCDABCD"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/ABCDABCD &lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;心得：
+&lt;p&gt;Openshift：&lt;a href="http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/ABCDABCD"&gt;&lt;font color="#FF0000"&gt;http://bg4cdw11-40323205.rhcloud.com/bg4_40323205/ABCDABCD &lt;/font&gt;&lt;/a&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;strong&gt;&lt;em&gt;圖片更改顏色前。網址裡的是更改顏色後。&lt;/em&gt;&lt;/strong&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+-----------------------------------------------------------------------------
+&lt;font size="3"&gt;&lt;b&gt;心得：&lt;/b&gt;&lt;/br&gt;
 這次的作業我認為更有小組一起運作的感覺。&lt;/br&gt;
 把整組的資料放在其中一個組員的github裡，比起兩個班一起使用一個github，這種方法令人更安心。&lt;/br&gt;
-也很感謝各個組員的教導！&lt;/p&gt;</summary><category term="40323205"></category><category term="cdw11"></category></entry><entry><title>40323208 cdw11 報告</title><link href="./40323208-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T09:09:27+08:00</updated><author><name>40323208</name></author><id>tag:,2016-06-16:./40323208-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
+也很感謝各個組員的教導！&lt;/font&gt;&lt;/p&gt;</summary><category term="40323205"></category><category term="cdw11"></category></entry><entry><title>40323208 cdw11 報告</title><link href="./40323208-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T09:09:27+08:00</updated><author><name>40323208</name></author><id>tag:,2016-06-16:./40323208-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
 
 
 &lt;p&gt;請各組在 CDW11 下課前完成下列3個圖形的零件組合繪圖:&lt;/p&gt;
