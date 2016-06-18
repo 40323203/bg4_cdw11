@@ -89,10 +89,10 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
+app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 
 </t>
@@ -230,10 +230,10 @@ import os
 import init
 
 #bg4
-import users.b.g4.bg4_b40323201_cdw11
 import users.b.g4.bg4_40323202
-import users.b.g4.bg4_40323208
+import users.b.g4.bg4_40323203
 import users.b.g4.bg4_40323205
+import users.b.g4.bg4_40323208
 import users.b.g4.bg4_test
 
 
@@ -503,7 +503,7 @@ def send_blog():
 </t>
 <t tx="leo.20160519172850.2">from flask import Blueprint, request
  
-bg4_test = Blueprint('bg4_40323203', __name__, url_prefix='/bg4_40323203', template_folder='templates')
+bg4_40323203 = Blueprint('bg4_40323203', __name__, url_prefix='/bg4_40323203', template_folder='templates')
  
 head_str = '''
 &lt;!DOCTYPE html&gt;

@@ -90,14 +90,8 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-=======
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-=======
-
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 0bca26eddb9fb00bcd9ff7e076ad4c57c395eab1
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 6093aa3a76036812b1793f5723b3ff43e1f86528
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
+app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
 app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
@@ -237,15 +231,8 @@ import os
 import init
 
 #bg4
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-
-=======
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-=======
-
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 0bca26eddb9fb00bcd9ff7e076ad4c57c395eab1
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 6093aa3a76036812b1793f5723b3ff43e1f86528
 import users.b.g4.bg4_40323202
+import users.b.g4.bg4_40323203
 import users.b.g4.bg4_40323205
 import users.b.g4.bg4_40323208
 import users.b.g4.bg4_test

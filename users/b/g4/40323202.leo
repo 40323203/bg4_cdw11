@@ -89,10 +89,10 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
+app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 
 </t>
@@ -230,10 +230,10 @@ import os
 import init
 
 #bg4
-
 import users.b.g4.bg4_40323202
-import users.b.g4.bg4_40323208
+import users.b.g4.bg4_40323203
 import users.b.g4.bg4_40323205
+import users.b.g4.bg4_40323208
 import users.b.g4.bg4_test
 
 

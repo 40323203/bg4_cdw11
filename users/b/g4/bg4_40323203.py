@@ -1,6 +1,6 @@
 from flask import Blueprint, request
  
-bg4_test = Blueprint('bg4_40323203', __name__, url_prefix='/bg4_40323203', template_folder='templates')
+bg4_40323203 = Blueprint('bg4_40323203', __name__, url_prefix='/bg4_40323203', template_folder='templates')
  
 head_str = '''
 <!DOCTYPE html>
