@@ -23,6 +23,7 @@
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g4</vh>
 <v t="leo.20160526111548.1"><vh>@edit 40323205-cdw11.md</vh></v>
 <v t="leo.20160616103456.1"><vh>@edit 40323205-cdw13.md</vh></v>
+<v t="leo.20160618221913.1"><vh>@edit 40323205-final.md</vh></v>
 </v>
 </v>
 </v>
@@ -36,7 +37,7 @@
 <v t="leo.20160519101258.1"><vh>twocircle</vh></v>
 <v t="leo.20160519114225.1"><vh>eighteenthirty</vh></v>
 </v>
-<v t="amd.20160501221015.1"><vh>@path ./../../../</vh>
+<v t="amd.20160501221015.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501221001.1"><vh>@clean myflaskapp.py</vh>
 <v t="amd.20160501221001.2"><vh>myflaskapp declarations</vh></v>
 <v t="amd.20160501221001.3"><vh>index</vh></v>
