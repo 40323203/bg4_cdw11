@@ -21,23 +21,28 @@
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g4</vh>
-<v t="amd.20160501215720.1"><vh>@edit 40323201- cdw11.md</vh></v>
+<v t="amd.20160501215720.1"><vh>@edit 40323201-cdw11.md</vh></v>
+<v t="leo.20160620000405.1"><vh>@edit 40323201-cdw13.md</vh></v>
+<v t="leo.20160620001005.1"><vh>@edit 40323201-cdw15.md</vh></v>
 </v>
 </v>
 </v>
 </v>
 <v t="amd.20160501215545.1" a="E"><vh>wsgi 程式部份</vh>
-<v t="leo.20160505110212.1" a="E"><vh>@clean b40323201_cdw11.py</vh>
-<v t="leo.20160505110635.1"><vh>b40323201_cdw11 declarations</vh></v>
-<v t="leo.20160505110635.2"><vh>a</vh></v>
-<v t="leo.20160505110635.3"><vh>draw_a</vh></v>
-<v t="leo.20160505110635.4"><vh>circle36</vh></v>
-<v t="leo.20160505110635.5"><vh>drawcircle36</vh></v>
+<v t="leo.20160505110212.1" a="E"><vh>@clean bg4_40323201.py</vh>
+<v t="leo.20160505110635.1"><vh>bg4_40323201 declarations</vh></v>
+<v t="leo.20160619201422.1"><vh>circle</vh></v>
+<v t="leo.20160619203541.1"><vh>twocircle</vh></v>
+<v t="leo.20160619212538.1"><vh>chain</vh></v>
+<v t="leo.20160619222028.1"><vh>AAAA</vh></v>
+<v t="leo.20160619213351.1"><vh>ABCD</vh></v>
+<v t="leo.20160619213351.2"><vh>BACD</vh></v>
 </v>
 <v t="amd.20160501221015.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501221001.1" a="E"><vh>@clean myflaskapp.py</vh>
 <v t="amd.20160501221001.2"><vh>myflaskapp declarations</vh></v>
 <v t="amd.20160501221001.3"><vh>index</vh></v>
+<v t="leo.20160619194241.1"><vh>@auto users\b\g4\bg4_40323203.py</vh></v>
 <v t="amd.20160501221001.4"><vh>user</vh></v>
 <v t="amd.20160501221001.5"><vh>red</vh></v>
 <v t="amd.20160501221001.6"><vh>guessform</vh></v>
@@ -54,6 +59,12 @@
 <v t="amd.20160501230850.1"><vh>send_blog</vh></v>
 <v t="amd.20160501225844.1"><vh>send_file</vh></v>
 </v>
+</v>
+</v>
+<v t="leo.20160619192219.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160619192219.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="leo.20160619192219.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="leo.20160619192219.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
 </vnodes>
@@ -87,10 +98,11 @@ if __name__ == "__main__":
     app.run()
 
 #bg4
-app.register_blueprint(users.b.g4.b40323201_cdw11.b40323201)
+app.register_blueprint(users.b.g4.bg4_40323201.bg4_40323201)
 app.register_blueprint(users.b.g4.bg4_40323202.bg4_40323202)
-app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
+app.register_blueprint(users.b.g4.bg4_40323203.bg4_40323203)
 app.register_blueprint(users.b.g4.bg4_40323205.bg4_40323205)
+app.register_blueprint(users.b.g4.bg4_40323208.bg4_40323208)
 app.register_blueprint(users.b.g4.bg4_test.bg4_test)
 
 </t>
@@ -228,10 +240,11 @@ import os
 import init
 
 #bg4
-import users.b.g4.bg4_b40323201_cdw11
+import users.b.g4.bg4_40323201
 import users.b.g4.bg4_40323202
-import users.b.g4.bg4_40323208
+import users.b.g4.bg4_40323203
 import users.b.g4.bg4_40323205
+import users.b.g4.bg4_40323208
 import users.b.g4.bg4_test
 
 
@@ -501,7 +514,7 @@ def send_blog():
 </t>
 <t tx="leo.20160505110635.1">from flask import Blueprint, request
  
-b40323201 = Blueprint('b40323201', __name__, url_prefix='/b40323201', template_folder='templates')
+bg4_40323201 = Blueprint('bg4_40323201', __name__, url_prefix='/bg4_40323201', template_folder='templates')
  
 head_str = '''
 &lt;!DOCTYPE html&gt;
@@ -633,9 +646,546 @@ class chain():
             cgo.render(basic1, x1, y1, self.scale, 0)
  
         return x2, y2
-'''
+'''</t>
+<t tx="leo.20160619192219.2"></t>
+<t tx="leo.20160619192219.3">(uncached) amd.20160501221001.2
+Diff...
+  # coding: utf-8
+  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+  import random
+  import math
+  import os
+  # init.py 為自行建立的起始物件
+  import init
+  
+  #bg4
++ import users.b.g4.bg4_b40323201_cdw11
+  import users.b.g4.bg4_40323202
+- import users.b.g4.bg4_40323203
+?                              ^
++ import users.b.g4.bg4_40323208
+?                              ^
+  import users.b.g4.bg4_40323205
+- import users.b.g4.bg4_40323208
+  import users.b.g4.bg4_test
+  
+  
+  
+  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+  # 設定在雲端與近端的資料儲存目錄
+  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+      # 表示程式在雲端執行
+      data_dir = os.environ['OPENSHIFT_DATA_DIR']
+      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+  else:
+      # 表示程式在近端執行
+      data_dir = _curdir + "/local_data/"
+      static_dir = _curdir + "/static"
+      download_dir = _curdir + "/local_data/downloads/"
+  
+  # 利用 init.py 啟動, 建立所需的相關檔案
+  initobj = init.Init()
+  
+  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+  app = Flask(__name__)
+  #app.config['download_dir'] = download_dir
+  
+  # 使用 session 必須要設定 secret_key
+  # In order to use sessions you have to set a secret key
+  # set the secret key.  keep this really secret:
+  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+  
+  
+  
+  
+  
+  
 </t>
-<t tx="leo.20160505110635.2"># 傳繪 A 函式內容
+<t tx="leo.20160619192219.4"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+#bg4
+import users.b.g4.bg4_b40323201_cdw11
+import users.b.g4.bg4_40323202
+import users.b.g4.bg4_40323208
+import users.b.g4.bg4_40323205
+import users.b.g4.bg4_test
+
+
+
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+</t>
+<t tx="leo.20160619192219.5"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+#bg4
+import users.b.g4.bg4_40323202
+import users.b.g4.bg4_40323203
+import users.b.g4.bg4_40323205
+import users.b.g4.bg4_40323208
+import users.b.g4.bg4_test
+
+
+
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+</t>
+<t tx="leo.20160619201422.1">@bg4_40323201.route('/circle/&lt;degree&gt;', defaults={'x': 0, 'y': 0})
+@bg4_40323201.route('/circle/&lt;x&gt;/&lt;degree&gt;', defaults={'y': 0})
+@bg4_40323201.route('/circle/&lt;x&gt;/&lt;y&gt;/&lt;degree&gt;')
+def circle36(x,y,degree):
+    return head_str + chain_str + circle36(int(x), int(y), int(degree)) + tail_str
+    
+
+def circle36(x, y, degree=10):
+    first_degree = 90 - degree
+    repeat = 360 / degree
+    outstring = '''
+mychain = chain()
+ 
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
+    return outstring
+</t>
+<t tx="leo.20160619203541.1">@bg4_40323201.route('/twocircle/&lt;x&gt;/&lt;y&gt;')
+@bg4_40323201.route('/twocircle', defaults={'x':0, 'y':0})
+def drawtwocircle(x,y):
+    return head_str + chain_str + twocircle(int(x), int(y)) + tail_str
+
+def twocircle(x, y):
+    x = 50
+    y = 0
+    degree = 12
+    first_degree = 90 - degree
+    repeat = 360 / degree
+    # 第1節也是 virtual chain
+    outstring = '''
+mychain = chain()
+ 
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''', True)
+#x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''',)
+'''
+
+
+    # 這裡要上下各多留一節虛擬 chain, 以便最後進行連接 (x7, y7) 與 (x22, y22)
+    for i in range(2, int(repeat)+1):
+        #if i &lt; 7 or i &gt; 23:        
+        if i &lt;= 7 or i &gt;= 23:
+            # virautl chain
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+", True) \n"
+            #outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
+        else:
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
+ 
+    p = -150
+    k = 0
+    degree = 20
+    # 70, 50, 30, 10
+    # 從 i=5 開始, 就是 virautl chain
+    first_degree = 90 - degree
+    repeat = 360 / degree
+    # 第1節不是 virtual chain
+    outstring += '''
+#mychain = chain()
+ 
+p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        if i &gt;= 5 and i &lt;= 13:
+            # virautl chain
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+", True) \n"
+            #outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+") \n"
+        else:
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+", 90-"+str(i*degree)+") \n"
+ 
+    # 上段連接直線
+    # 從 p5, k5 作為起點
+    first_degree = 10
+    repeat = 11
+    outstring += '''
+m1, n1 = mychain.basic_rot(p4, k4, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "m"+str(i)+", n"+str(i)+"=mychain.basic_rot(m"+str(i-1)+", n"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 下段連接直線
+    # 從 p12, k12 作為起點
+    first_degree = -10
+    repeat = 11
+    outstring += '''
+r1, s1 = mychain.basic_rot(p13, k13, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 上段右方接點為 x7, y7, 左側則為 m11, n11
+    outstring += "mychain.basic(x7, y7, m11, n11)\n"
+    # 下段右方接點為 x22, y22, 左側則為 r11, s11
+    outstring += "mychain.basic(x22, y22, r11, s11)\n"
+ 
+    return outstring
+
+</t>
+<t tx="leo.20160619212538.1">@bg4_40323201.route('/chain/&lt;x&gt;/&lt;y&gt;')
+@bg4_40323201.route('/chain', defaults={'x':0, 'y':0})
+def chain(x,y):
+    return head_str + chain_str + chain(int(x), int(y)) + tail_str
+    
+    
+def chain(x, y, scale=1, color="black"):
+    '''
+從圖解法與符號式解法得到的兩條外切線座標點
+(-203.592946177111, 0.0), (0.0, 0.0), (-214.364148466539, 56.5714145924675), (-17.8936874260919, 93.9794075692901)
+(-203.592946177111, 0.0), (0.0, 0.0), (-214.364148466539, -56.5714145924675), (-17.8936874260919, -93.9794075692901)
+左邊關鍵鍊條起點 (-233.06, 49.48), 角度 20.78, 圓心 (-203.593, 0.0)
+右邊關鍵鍊條起點 (-17.89, 93.9), 角度 4.78, 圓心 (0, 0)
+    '''
+    # 20 為鏈條兩圓距
+    # chain 所圍之圓圈半徑為 20/2/math.asin(degree*math.pi/180/2)
+    # degree = math.asin(20/2/radius)*180/math.pi
+    x = 50
+    y = 0
+    degree = 20
+    first_degree = 100
+    startx = -233.06+295
+    starty = -90
+    repeat = 360 / degree
+    # 先畫出左邊第一關鍵節
+    outstring = '''
+mychain = chain()
+mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
+ 
+x1, y1 = mychain.basic_rot('''+str(startx)+","+str(starty)+", "+str(first_degree)+''')
+ 
+'''
+    # 接著繪製左邊的非虛擬鍊條
+    for i in range(2, int(repeat)+1):
+        if i &gt;=2 and i &lt;=11:
+            # virautl chain
+            #outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+", True) \n"
+        else:
+            outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+ 
+    # 接著處理右邊的非虛擬鍊條
+    # 先畫出右邊第一關鍵節
+ 
+    p = -17.89+40
+    k = 130
+    degree = 12
+    first_degree = 95
+    repeat = 360 / degree
+    # 第1節不是 virtual chain
+    outstring += '''
+#mychain = chain()
+ 
+p1, k1 = mychain.basic_rot('''+str(p)+","+str(k)+", "+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        if i &gt;=18:
+            # virautl chain
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+", True) \n"
+            #outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+        else:
+            outstring += "p"+str(i)+", k"+str(i)+"=mychain.basic_rot(p"+str(i-1)+", k"+str(i-1)+","+str(first_degree+degree-i*degree)+") \n"
+ 
+    # 上段連接直線
+    # 從 x1, y1 作為起點
+    first_degree =  100.3
+    repeat = 10
+    outstring += '''
+m1, n1 = mychain.basic_rot(x1, y1, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "m"+str(i)+", n"+str(i)+"=mychain.basic_rot(m"+str(i-1)+", n"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    # 下段連接直線
+    # 從 x11, y11 作為起點
+    first_degree = 79.8
+    repeat = 11
+    outstring += '''
+r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
+'''
+    for i in range(2, int(repeat)+1):
+        outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
+ 
+    return outstring
+
+</t>
+<t tx="leo.20160619213351.1">@bg4_40323201.route('/ABCD')
+def abcd():
+    return head_str + chain_str + abcd(0, 0) + tail_str
+
+
+def abcd(x, y, scale=1, color="black"):
+    outstring = '''
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
+
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(60, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 右上垂直向下單元
+x7, y7 = mychain.basic_rot(x6, y6, -90)
+# 右斜 240 度
+x8, y8 = mychain.basic_rot(x7, y7, 210)
+# 中間水平
+mychain.basic(x8, y8, x2, y2)
+# 右下斜 -30 度
+x10, y10 = mychain.basic_rot(x8, y8, -30)
+# 右下垂直向下單元
+x11, y11 = mychain.basic_rot(x10, y10, -90)
+# 右下斜 240 度
+x12, y12 = mychain.basic_rot(x11, y11, 210)
+# 水平接回起點
+mychain.basic(x12,y12, 0, 0)
+
+
+cgo.setWorldCoords(-247.5, -350, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot(0, -20, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-55, -50, 500, 500) 
+# 畫 D
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(190+65*3, 40, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
+# 水平接回原點
+mychain.basic(x10, y10, 0+65*3, 0)
+
+cgo.setWorldCoords(-120, -150, 500, 500) 
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(120+65*2, 10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90)
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80)
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30)
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0)
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(120+65*2, 10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80)
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0)
+'''
+    return outstring
+</t>
+<t tx="leo.20160619213351.2">@bg4_40323201.route('/BADC')
+def badc():
+    return head_str + chain_str + badc(0, 0) + tail_str
+
+
+def badc(x, y, scale=1, color="black"):
+    outstring = '''
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
+ 
+
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+''', 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 右上垂直向下單元
+x7, y7 = mychain.basic_rot(x6, y6, -90)
+# 右斜 240 度
+x8, y8 = mychain.basic_rot(x7, y7, 210)
+# 中間水平
+mychain.basic(x8, y8, x2, y2)
+# 右下斜 -30 度
+x10, y10 = mychain.basic_rot(x8, y8, -30)
+# 右下垂直向下單元
+x11, y11 = mychain.basic_rot(x10, y10, -90)
+# 右下斜 240 度
+x12, y12 = mychain.basic_rot(x11, y11, 210)
+# 水平接回起點
+mychain.basic(x12,y12, 0, 0)
+
+cgo.setWorldCoords(-260, -250, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot(50,0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-315, -250, 500, 500) 
+# 畫 D
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+60, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
+# 水平接回原點
+mychain.basic(x10, y10, 0+60, 0)
+
+cgo.setWorldCoords(-315, -250, 500, 500)
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90)
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80)
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30)
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0)
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80)
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0)
+'''
+    return outstring
+    
+
+</t>
+<t tx="leo.20160619222028.1">@bg4_40323201.route('/AAAA')
+def a():
+    return head_str + chain_str + a(0, 0) + tail_str
+
+# 傳繪 A 函式內容
 def a(x, y, scale=1, color="black"):
     outstring = '''
 # 利用 chain class 建立案例, 對應到 mychain 變數
@@ -659,39 +1209,69 @@ x9, y9 = mychain.basic_rot(x8, y8, -90)
 # 中間兩個水平單元
 x10, y10 = mychain.basic_rot(x8, y8, -180)
 mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-315, -250, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+''', 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-380, -250, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+''', 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-445, -250, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+''', 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
 '''
- 
     return outstring
-
-</t>
-<t tx="leo.20160505110635.3">@b40323201.route('/a')
-def draw_a():
-    return head_str + chain_str + a(0, 0) + tail_str
-
-</t>
-<t tx="leo.20160505110635.4">def circle36(x, y, degree=10):
-    # 20 為鏈條輪廓之圓距
-    # chain 所圍之圓圈半徑為 20/2/math.asin(degree*math.pi/180/2)
-    # degree = math.asin(20/2/radius)*180/math.pi
-    #degree = 10
-    first_degree = 90 - degree
-    repeat = 360 / degree
-    outstring = '''
-mychain = chain()
- 
-x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''')
-'''
-    for i in range(2, int(repeat)+1):
-        outstring += "x"+str(i)+", y"+str(i)+"=mychain.basic_rot(x"+str(i-1)+", y"+str(i-1)+", 90-"+str(i*degree)+") \n"
-    return outstring
-
-</t>
-<t tx="leo.20160505110635.5">@b40323201.route('/circle36/&lt;degree&gt;', defaults={'x': 0, 'y': 0})
-@b40323201.route('/circle36/&lt;x&gt;/&lt;degree&gt;', defaults={'y': 0})
-@b40323201.route('/circle36/&lt;x&gt;/&lt;y&gt;/&lt;degree&gt;')
-#@bg4.route('/circle36/&lt;int:x&gt;/&lt;int:y&gt;/&lt;int:degree&gt;')
-def drawcircle36(x,y,degree):
-    return head_str + chain_str + circle36(int(x), int(y), int(degree)) + tail_str
+    
 
 </t>
 </tnodes>
