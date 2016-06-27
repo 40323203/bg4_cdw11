@@ -5,29 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-06-22T21:42:02-00:00</lastmod>
+<lastmod>2016-06-28T00:51:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-06-22T21:42:02-00:00</lastmod>
+<lastmod>2016-06-28T00:51:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-06-22T21:42:02-00:00</lastmod>
+<lastmod>2016-06-28T00:51:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-06-22T21:42:02-00:00</lastmod>
+<lastmod>2016-06-28T00:51:59-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./40323202-cdw18-qi-mo-bao-gao.html</loc>
+<lastmod>2016-06-27T23:13:33+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./40323202-cdw15-qi-mo-bao-gao.html</loc>
+<lastmod>2016-06-27T23:13:33+08:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -117,20 +131,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/bg4.html</loc>
-<lastmod>2016-06-20T00:25:07+08:06</lastmod>
+<lastmod>2016-06-27T23:13:33+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/cdw15.html</loc>
-<lastmod>2016-06-20T00:25:07+08:06</lastmod>
+<loc>./tag/qi-mo-bao-gao.html</loc>
+<lastmod>2016-06-19T19:21:53+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/40323203.html</loc>
+<loc>./tag/40323208.html</loc>
 <lastmod>2016-06-16T23:52:37+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -144,8 +158,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/qi-mo-bao-gao.html</loc>
-<lastmod>2016-06-19T19:21:53+08:06</lastmod>
+<loc>./tag/40323203.html</loc>
+<lastmod>2016-06-16T23:52:37+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/cdw11.html</loc>
+<lastmod>2016-06-19T19:30:34+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/40323202.html</loc>
+<lastmod>2016-06-27T23:13:33+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -165,22 +193,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/cdw11.html</loc>
-<lastmod>2016-06-19T19:30:34+08:06</lastmod>
+<loc>./tag/cdw18.html</loc>
+<lastmod>2016-06-27T23:13:33+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/40323202.html</loc>
-<lastmod>2016-06-16T23:52:37+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/40323208.html</loc>
-<lastmod>2016-06-16T23:52:37+08:06</lastmod>
+<loc>./tag/cdw15.html</loc>
+<lastmod>2016-06-27T23:13:33+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -194,7 +215,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./author/40323202.html</loc>
-<lastmod>2016-06-16T23:52:37+08:06</lastmod>
+<lastmod>2016-06-27T23:13:33+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
